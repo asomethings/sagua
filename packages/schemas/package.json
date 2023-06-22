@@ -1,0 +1,20 @@
+{
+  "name": "@sagua/schemas",
+  "type": "module",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "default": "./dist/index.js"
+  },
+  "scripts": {
+    "format": "prettier -w --plugin-search-dir=. src",
+    "clean": "del-cli ./dist",
+    "build": "swc ./src -d ./dist -q && tsc",
+    "watch": "chokidar \"./src/**/*\" -c \"pnpm build\" --silent --initial"
+  },
+  "dependencies": {
+    "@sagua/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1"
+  }
+}
