@@ -1,9 +1,7 @@
-# Sagua
+# sagua
 
-A monorepo & typescript template
+A monorepo / typescript template
 
 ## Dependenices
 
 - pnpm >= 8.6
-
-## 
