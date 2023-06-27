@@ -4,11 +4,16 @@
   "private": true,
   "description": "",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
     "format": "turbo format",
     "build": "turbo build",
     "watch": "turbo watch",
     "start:prod": "turbo start:prod"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=8.6"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.6",
