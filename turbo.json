@@ -4,6 +4,7 @@
     "format": {
       "cache": false
     },
+    "test": {},
     "clean": {
       "cache": false
     },

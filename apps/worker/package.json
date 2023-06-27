@@ -3,6 +3,7 @@
   "type": "module",
   "scripts": {
     "format": "prettier -w --plugin-search-dir=. src",
+    "test": "jest --passWithNoTests",
     "clean": "del-cli ./dist",
     "build": "swc ./src -d ./dist -q",
     "watch": "chokidar \"./src/**/*\" -c \"pnpm build\" --silent --initial",
@@ -12,6 +13,7 @@
     "@sagua/core": "workspace:*"
   },
   "devDependencies": {
-    "@types/node": "^20.3.1"
+    "@types/node": "^20.3.1",
+    "@jest/globals": "^29.5.0"
   }
 }
