@@ -2,7 +2,7 @@
   "name": "@sagua/worker",
   "type": "module",
   "scripts": {
-    "format": "prettier -w --plugin-search-dir=. src",
+    "format": "rome format . --write ",
     "test": "jest --passWithNoTests",
     "clean": "del-cli ./dist",
     "build": "swc ./src -d ./dist -q",
