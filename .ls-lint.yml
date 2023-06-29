@@ -1,0 +1,8 @@
+ls:
+  .ts: kebab-case | pointcase
+  .json: kebab-case | pointcase
+
+ignore:
+  - node_modules
+  - dist
+  - .turbo
