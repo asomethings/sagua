@@ -1,19 +1,19 @@
 {
-  "name": "@sagua/server",
-  "type": "module",
-  "scripts": {
-    "format": "rome format . --write",
-    "test": "jest --passWithNoTests",
-    "clean": "del-cli ./dist",
-    "build": "swc ./src -d ./dist -q",
-    "watch": "chokidar \"./src/**/*\" -c \"pnpm build && node ./dist/index.js\" --silent --initial",
-    "start:prod": "node ./dist/index.js"
-  },
-  "dependencies": {
-    "@sagua/core": "workspace:*"
-  },
-  "devDependencies": {
-    "@jest/globals": "^29.5.0",
-    "@types/node": "^20.3.2"
-  }
+	"name": "@sagua/server",
+	"type": "module",
+	"scripts": {
+		"format": "rome format . --write",
+		"test": "jest --passWithNoTests",
+		"clean": "del-cli ./dist",
+		"build": "swc ./src -d ./dist -q",
+		"watch": "chokidar \"./src/**/*\" -c \"pnpm build && node ./dist/index.js\" --silent --initial",
+		"start:prod": "node ./dist/index.js"
+	},
+	"dependencies": {
+		"@sagua/core": "workspace:*"
+	},
+	"devDependencies": {
+		"@jest/globals": "^29.5.0",
+		"@types/node": "^20.3.2"
+	}
 }

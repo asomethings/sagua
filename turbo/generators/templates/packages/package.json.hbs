@@ -1,0 +1,19 @@
+{
+  "name": "@sagua/{{ name }}",
+  "type": "module",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "default": "./dist/index.js"
+  },
+  "scripts": {
+    "format": "rome format . --write",
+    "test": "jest --passWithNoTests",
+    "clean": "del-cli ./dist",
+    "build": "swc ./src -d ./dist -q && tsc",
+    "watch": "chokidar \"./src/**/*\" -c \"pnpm build\" --silent --initial"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.5.0",
+    "@types/node": "^20.3.2"
+  }
+}
