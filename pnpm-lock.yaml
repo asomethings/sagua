@@ -30,8 +30,8 @@ importers:
         specifier: ^20.1.0
         version: 20.1.0
       '@turbo/gen':
-        specifier: ^1.10.8
-        version: 1.10.8(@swc/core@1.3.70)(@types/node@20.4.2)(typescript@5.1.6)
+        specifier: ^1.10.9
+        version: 1.10.9(@swc/core@1.3.70)(@types/node@20.4.2)(typescript@5.1.6)
       '@types/node':
         specifier: ^20.4.2
         version: 20.4.2
@@ -1212,8 +1212,8 @@ packages:
     resolution: {integrity: sha512-7Yz1xDv3sot8+NwiYA8wkx60qr3Tr+soJwlqVQSkiEqqgYoNmMmqSPiYs1vMmTxneB3igHAD11dGOR2+BShzTA==}
     dev: true
 
-  /@turbo/gen@1.10.8(@swc/core@1.3.70)(@types/node@20.4.2)(typescript@5.1.6):
-    resolution: {integrity: sha512-USj3kBtIPi+fK+EB4/mmLdEesCVB75NQhubpygM8w30KtK3VLpc2JRuQi81SEiPCWqCjsdLy2KYKTco3e+5o2A==}
+  /@turbo/gen@1.10.9(@swc/core@1.3.70)(@types/node@20.4.2)(typescript@5.1.6):
+    resolution: {integrity: sha512-EQdg4NqN032+o2Wgj9lg49puijGc4tbgKjGjDOi8+rN/RqE9CUKxKtrfaTGdDjfdC1Uy8FaaKk7y1zYK3zIojg==}
     hasBin: true
     dependencies:
       chalk: 2.4.2
