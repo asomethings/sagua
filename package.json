@@ -18,7 +18,7 @@
 		"pnpm": ">=8.6"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^17.6.6",
+		"@commitlint/cli": "^17.6.7",
 		"@commitlint/config-conventional": "^17.6.7",
 		"@ls-lint/ls-lint": "^2.0.1",
 		"@swc/cli": "^0.1.62",
