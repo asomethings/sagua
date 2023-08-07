@@ -1,5 +1,5 @@
 {
   "$schema": "https://json.schemastore.org/lintstagedrc.schema",
-  "*{.ts,.js,.json}": "pnpm format",
-  "*{.ts,.js}": "pnpm lint"
+  "*.{js,jsx,ts,tsx,md,html,css}": "prettier --write",
+  "*.{js,jsx,ts,tsx}": "eslint --fix"
 }
