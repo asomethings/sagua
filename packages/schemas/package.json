@@ -15,7 +15,7 @@
     "@sagua/core": "workspace:*"
   },
   "devDependencies": {
-    "@jest/globals": "^29.5.0",
+    "@jest/globals": "^29.6.2",
     "@types/node": "^20.4.8"
   }
 }
