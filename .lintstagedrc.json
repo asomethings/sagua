@@ -1,4 +1,5 @@
 {
-	"$schema": "https://json.schemastore.org/lintstagedrc.schema",
-	"*{.ts,.js,.json}": "pnpm format"
+  "$schema": "https://json.schemastore.org/lintstagedrc.schema",
+  "*{.ts,.js,.json}": "pnpm format",
+  "*{.ts,.js}": "pnpm lint"
 }

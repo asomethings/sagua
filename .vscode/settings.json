@@ -1,26 +1,15 @@
 {
-	"prettier.enable": false,
-	"[javascript]": {
-		"editor.defaultFormatter": "rome.rome",
-		"editor.formatOnSave": true,
-		"editor.codeActionsOnSave": {
-			"quickfix.rome": true,
-			"source.organizeImports.rome": true
-		}
-	},
-	"[typescript]": {
-		"editor.defaultFormatter": "rome.rome",
-		"editor.formatOnSave": true,
-		"editor.codeActionsOnSave": {
-			"quickfix.rome": true,
-			"source.organizeImports.rome": true
-		}
-	},
-	"[json]": {
-		"editor.defaultFormatter": "rome.rome",
-		"editor.codeActionsOnSave": {
-			"editor.formatOnSave": true,
-			"quickfix.rome": true
-		}
-	}
+  "prettier.enable": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
 }
