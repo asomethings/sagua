@@ -6,8 +6,10 @@
     "test": "jest --passWithNoTests",
     "clean": "del-cli ./dist",
     "build": "swc ./src -d ./dist -q",
-    "watch": "chokidar \"./src/**/*\" -c \"pnpm build\" --silent --initial",
-    "start:prod": "node ./dist/index.js"
+    "build:watch": "swc ./src -d ./dist -q -w",
+    "watch": "pnpm --silent run build && conc --raw -k \"pnpm:*:watch\"",
+    "start": "node ./dist/index.js",
+    "start:watch": "chokidar \"./dist/**/*\" -c \"node ./dist/index.js\" --silent --initial"
   },
   "dependencies": {
     "@sagua/core": "workspace:*"

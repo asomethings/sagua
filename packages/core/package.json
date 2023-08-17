@@ -8,8 +8,10 @@
   "scripts": {
     "test": "jest --passWithNoTests",
     "clean": "del-cli ./dist",
-    "build": "swc ./src -d ./dist -q && tsc",
-    "watch": "chokidar \"./src/**/*\" -c \"pnpm build\" --silent --initial"
+    "build": "swc ./src -d ./dist -q",
+    "build:watch": "swc ./src -d ./dist -q -w",
+    "types:watch": "tsc -w --preserveWatchOutput",
+    "watch": "conc -k --raw pnpm:*:watch"
   },
   "devDependencies": {
     "@jest/globals": "^29.6.2",

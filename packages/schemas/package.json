@@ -9,7 +9,9 @@
     "test": "jest --passWithNoTests",
     "clean": "del-cli ./dist",
     "build": "swc ./src -d ./dist -q && tsc",
-    "watch": "chokidar \"./src/**/*\" -c \"pnpm build\" --silent --initial"
+    "build:watch": "swc ./src -d ./dist -q -w",
+    "types:watch": "tsc -w --preserveWatchOutput",
+    "watch": "conc -k --raw pnpm:*:watch"
   },
   "dependencies": {
     "@sagua/core": "workspace:*"
