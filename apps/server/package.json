@@ -5,8 +5,10 @@
     "test": "jest --passWithNoTests",
     "clean": "del-cli ./dist",
     "build": "swc ./src -d ./dist -q",
-    "watch": "chokidar \"./src/**/*\" -c \"pnpm build && node ./dist/index.js\" --silent --initial",
-    "start:prod": "node ./dist/index.js"
+    "watch:ts": "swc ./src -d ./dist -q -w",
+    "watch": "pnpm --silent run build && concurrently -k -p \"[{name}]\" -n \"swc,app\" -c \"yellow.bold,cyan.bold\" \"npm:watch:ts\" \"npm:start:dev\"",
+    "start": "node ./dist/index.js",
+    "start:dev": "chokidar \"./dist/**/*\" -c \"node ./dist/index.js\" --silent --initial"
   },
   "dependencies": {
     "@sagua/core": "workspace:*"
