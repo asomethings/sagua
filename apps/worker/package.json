@@ -16,6 +16,6 @@
   },
   "devDependencies": {
     "@jest/globals": "^29.6.2",
-    "@types/node": "^20.5.0"
+    "@types/node": "^20.8.6"
   }
 }
