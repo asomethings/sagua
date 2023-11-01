@@ -1,4 +1,4 @@
-FROM node:20-alpine
+FROM node:21-alpine
 
 ENV PNPM_HOME=/usr/local/bin
 
